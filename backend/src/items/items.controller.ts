@@ -20,7 +20,6 @@ export class ItemsController {
 
   @Post()
   createItem(@Body() createItem: CreateItemDto): string {
-    console.log('createItem: ', createItem);
     return this.itemsService.createItem(createItem);
   }
 
